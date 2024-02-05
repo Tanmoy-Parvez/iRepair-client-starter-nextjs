@@ -6,7 +6,7 @@ export type TParams = {
 
 const BookingPage = async ({ params }: { params: TParams }) => {
   const res = await fetch(
-    `http://localhost:5001/api/v1/services/${params.serviceId}`
+    `http://localhost:5000/api/v1/services/${params.serviceId}`
   );
   const data = await res.json();
   //   console.log(data.data);
